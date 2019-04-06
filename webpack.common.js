@@ -7,12 +7,14 @@ const webpack = require('webpack');
 const paths = {
     DIST: path.resolve(__dirname, 'dist'),
     PUBLIC: path.resolve(__dirname, 'public'),
-    SRC: path.resolve(__dirname, 'src')
+	SRC: path.resolve(__dirname, 'src'),
+	CLIENT: path.resolve(__dirname, 'src/client'),
+	SERVER: path.resolve(__dirname, 'src/server')
 };
 
 // Webpack configuration
 module.exports = {
-    entry: path.join(paths.SRC, 'index.js'),
+    entry: path.join(paths.CLIENT, 'index.js'),
     output: {
         path: paths.DIST,
         filename: 'app.bundle.js'
