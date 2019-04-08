@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
-import { getTeamShotChart } from "./services/NbaStats";
 
 class App extends Component {
 
@@ -11,14 +10,7 @@ class App extends Component {
         };
     }
 
-    componentDidMount() {
-        this.setState({
-            data: getTeamShotChart("Boston Celtics")
-        });
-    }
-
     render() {
-
 
         return (
             <div>{this.state.data}</div>
