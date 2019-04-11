@@ -10,7 +10,7 @@
     ],
     "parserOptions": {
         "ecmaFeatures": {
-            "experimentalObjectRestSpread": true,
+            "ecmaVersion": true,
             "jsx": true
         },
         "sourceType": "module"
@@ -40,5 +40,10 @@
             "off"
         ],
         "react/prop-types": 0
-    }
+	},
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	}
 }
